@@ -1,6 +1,7 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {GenerateSW} = require('workbox-webpack-plugin')
+const { GenerateSW } = require('workbox-webpack-plugin')
 
 module.exports = {
   entry: './src/index.ts',
@@ -14,6 +15,9 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.browser': 'true'
+    }),
     new HtmlWebpackPlugin({
       template: './src/assets/template.html',
       favicon: './src/assets/favicon.ico',

@@ -40,5 +40,8 @@
     "webpack-dev-server": "^4.7.4",
     "webpack-merge": "^5.8.0",
     "workbox-webpack-plugin": "^6.5.1"
+  },
+  "dependencies": {
+    "jimp": "^0.16.1"
   }
 }
