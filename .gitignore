@@ -1,0 +1,12 @@
+.vscode
+node_modules
+
+dist
+certs/*.pem
+
+RoadMap.md
+
+chrome-linux
+chrome-data-temp
+android-cmdline-tools
+open-jdk
